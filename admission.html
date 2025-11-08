@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admission | State University of New York</title>
+    <link rel="stylesheet" href="admission.css" />
+    <link rel="stylesheet" href="Course.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="home.html"><img src="images/logo.png" alt="" /></a>
+        <div class="nav-link">
+          <i class="fa" onclick="hidemenu()"></i>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="Course.html">Course</a></li>
+            <li><a href="research.html">Resouse</a></li>
+            <li><a href="admission.html">Admission</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <i class="fa" onclick="hidemenu()"></i>
+      </nav>
+    </header>
+
+    <section class="admission-form">
+      <form id="admissionForm">
+        <div class="form-group">
+          <label for="fullName">Full Name:</label>
+          <input type="text" id="fullName" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="course">Select Course:</label>
+          <select id="course" required>
+            <option value="">-- Select a Course --</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="admissionType">Admission Type:</label>
+          <select id="admissionType" required>
+            <option value="">-- Select Admission Type --</option>
+            <option value="Freshman">Freshman (First-year Student)</option>
+            <option value="Transfer">Transfer Student</option>
+            <option value="Graduate">Graduate Admission</option>
+            <option value="International">International Student</option>
+            <option value="Part-time">Part-time or Continuing Education</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="session">Session:</label>
+          <select id="session" required>
+            <option value="Fall 2025">Fall 2025</option>
+            <option value="Spring 2026">Spring 2026</option>
+            <option value="Summer 2026">Summer 2026</option>
+          </select>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit Application</button>
+      </form>
+    </section>
+
+    <script src="admission.js"></script>
+  </body>
+</html>

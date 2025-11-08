@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses | State University of New York</title>
+    <link rel="stylesheet" href="Course.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="home.html"><img src="images/logo.png" alt="" /></a>
+        <div class="nav-link">
+          <i class="fa" onclick="hidemenu()"></i>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="Course.html">Course</a></li>
+            <li><a href="research.html">Resouse</a></li>
+            <li><a href="admission.html">Admission</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <i class="fa" onclick="hidemenu()"></i>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Explore Our Academic Programs</h1>
+      <p>Find your path at the State University of New York</p>
+
+      <div class="filters">
+        <input type="text" id="searchInput" placeholder="Search course..." />
+        <select id="categoryFilter">
+          <option value="all">All Departments</option>
+          <option value="engineering">Engineering</option>
+          <option value="business">Business</option>
+          <option value="arts">Arts & Humanities</option>
+          <option value="science">Science</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="courses" id="coursesContainer">
+      <!-- Courses will load from JS -->
+    </section>
+
+    <footer>
+      <p>© 2025 State University of New York. All rights reserved.</p>
+    </footer>
+
+    <script src="Course.js"></script>
+  </body>
+</html>

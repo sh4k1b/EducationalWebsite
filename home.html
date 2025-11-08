@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>State Univerity</title>
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="home.html"><img src="images/logo.png" alt="" /></a>
+        <div class="nav-link">
+          <i class="fa" onclick="hidemenu()"></i>
+          <ul>
+            <li><a href="home.html">Home </a></li>
+            <li><a href="Course.html">Course</a></li>
+            <li><a href="research.html">Resouse</a></li>
+            <li><a href="admission.html">Admission</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <i class="fa" onclick="hidemenu()"></i>
+      </nav>
+      <div class="text-box">
+        <h1>State Univerity in New York</h1>
+        <p>
+          It’s one of the largest public university systems in the U.S., known
+          for offering affordable, high-quality education in various fields like
+          science, engineering, business, arts, and medicine.
+        </p>
+        <a href="" class="btn">Visit US To Know More</a>
+      </div>
+    </section>
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showmenu() {
+        navLinks.style.right = "0";
+      }
+      function hidemenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

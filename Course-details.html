@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Details - SUNY</title>
+    <link rel="stylesheet" href="course-details.css" />
+  </head>
+  <body>
+    <div class="details-container">
+      <h1 id="courseTitle"></h1>
+      <p id="courseDescription"></p>
+      <p><strong>Duration:</strong> <span id="courseDuration"></span></p>
+      <p><strong>Admission Fee:</strong> <span id="courseAdmission"></span></p>
+      <p><strong>Lab Fee:</strong> <span id="courseLab"></span></p>
+      <p>
+        <strong>Credit Hour Fee:</strong> <span id="courseCreditFee"></span>
+      </p>
+      <p><strong>Total Credits:</strong> <span id="courseCredits"></span></p>
+
+      <button onclick="goBack()">← Back to Courses</button>
+      <div class="course-actions">
+        <button id="applyNowBtn">Apply Now</button>
+      </div>
+    </div>
+
+    <script src="course-details.js"></script>
+  </body>
+</html>

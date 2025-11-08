@@ -1,0 +1,177 @@
+/* === General Page Style === */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f7f9fc;
+  color: #222;
+}
+
+/* === Header === */
+header {
+  background: #002d72;
+  padding: 15px 50px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* === Introduction === */
+.research-intro {
+  max-width: 900px;
+  margin: 50px auto;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.research-intro h2 {
+  font-size: 1.8rem;
+  color: #0046ad;
+  margin-bottom: 15px;
+}
+
+/* === Research Areas === */
+.research-areas {
+  background: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.research-areas h2 {
+  color: #0046ad;
+  margin-bottom: 30px;
+}
+
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.research-card {
+  background: #f0f4ff;
+  padding: 25px;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.research-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.research-card h3 {
+  color: #0046ad;
+  margin-bottom: 10px;
+}
+
+/* === Recent Projects === */
+.research-projects {
+  max-width: 1000px;
+  margin: 70px auto;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.research-projects h2 {
+  color: #0046ad;
+  margin-bottom: 20px;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.project {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  width: 300px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-4px);
+}
+
+/* === Contact Section === */
+.research-contact {
+  background: #0046ad;
+  color: #fff;
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.research-contact h2 {
+  margin-bottom: 15px;
+}
+
+.contact-btn {
+  display: inline-block;
+  margin-top: 15px;
+  background: #fff;
+  color: #0046ad;
+  padding: 12px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+  background: #0073e6;
+  color: white;
+}
+
+/* === Footer === */
+footer {
+  text-align: center;
+  background: #f1f3f7;
+  color: #555;
+  padding: 15px 0;
+  font-size: 0.9rem;
+}
+
+nav img {
+  width: 100px;
+  margin-right: 300px;
+  padding-top: 50px;
+}
+
+.nav-link {
+  text-align: right;
+}
+
+.nav-link ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  padding-bottom: 40px;
+  position: relative;
+}
+
+.nav-link ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.nav-link ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-link ul li:hover::after {
+  width: 100%;
+}
